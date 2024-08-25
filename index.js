@@ -7,7 +7,7 @@ app.use(cors());
 app.put('/',(req,res)=>{
     const body = req.body;
     console.log({body})
-    res.send({success:true})
+    res.send({body})
 })
 app.listen(5000,()=>{
     console.log("server started at port 5000")
